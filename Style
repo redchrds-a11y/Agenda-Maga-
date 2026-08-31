@@ -1,0 +1,1072 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+  margin: 0;
+
+  padding: 25px;
+
+  font-family: Arial, sans-serif;
+
+  background: #f3f4f6;
+
+  color: #222;
+
+}
+
+
+.app {
+
+  max-width: 1200px;
+
+  margin: auto;
+
+}
+
+
+/* ENCABEZADO */
+
+header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+}
+
+
+h1 {
+
+  margin: 0;
+
+  font-size: 32px;
+
+}
+
+
+header p {
+
+  margin-top: 5px;
+
+  color: #666;
+
+}
+
+
+button {
+
+  border: none;
+
+  background: #4f46e5;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+}
+
+
+button:hover {
+
+  background: #4338ca;
+
+}
+
+
+/* RESUMEN */
+
+.resumen {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+
+}
+
+
+.tarjeta {
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,.05);
+
+}
+
+
+.tarjeta span {
+
+  color: #666;
+
+  font-size: 14px;
+
+}
+
+
+.tarjeta strong {
+
+  display: block;
+
+  font-size: 28px;
+
+  margin-top: 8px;
+
+}
+
+
+/* SECCIONES */
+
+.seccion {
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  margin-bottom: 25px;
+
+  overflow-x: auto;
+
+}
+
+
+.titulo-seccion {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+
+}
+
+
+.titulo-seccion h2 {
+
+  margin: 0;
+
+}
+
+
+.titulo-seccion span {
+
+  color: #777;
+
+  font-size: 14px;
+
+}
+
+
+/* CALENDARIO */
+
+.calendario {
+
+  min-width: 900px;
+
+  display: grid;
+
+  grid-template-columns:
+    70px
+    repeat(7, 1fr);
+
+  grid-auto-rows: 70px;
+
+  border-left: 1px solid #ddd;
+
+  border-top: 1px solid #ddd;
+
+}
+
+
+.calendario > div {
+
+  border-right: 1px solid #ddd;
+
+  border-bottom: 1px solid #ddd;
+
+  padding: 8px;
+
+  font-size: 13px;
+
+}
+
+
+.cabecera {
+
+  background: #f1f5f9;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+.cabecera.horario {
+
+  background: #e5e7eb;
+
+}
+
+
+.cabecera.domingo {
+
+  color: #dc2626;
+
+}
+
+
+.hora {
+
+  color: #777;
+
+  text-align: center;
+
+  font-size: 12px !important;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+/* CLASES */
+
+.clase {
+
+  color: white;
+
+  border-radius: 7px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+.clase small {
+
+  margin-top: 5px;
+
+  font-weight: normal;
+
+}
+
+
+.ondas {
+
+  background: #dc2626;
+
+}
+
+
+.espectral {
+
+  background: #a3a30c;
+
+}
+
+
+.civil {
+
+  background: #3046a3;
+
+}
+
+
+.electro {
+
+  background: #32a852;
+
+}
+
+
+.geologia {
+
+  background: #ff9200;
+
+}
+
+
+.variable {
+
+  background: #795548;
+
+}
+
+
+.economia {
+
+  background: #8125a8;
+
+}
+
+
+.libre {
+
+  background: #f8fafc;
+
+  color: #94a3b8;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 11px !important;
+
+}
+
+
+.descanso {
+
+  background: #fff7ed;
+
+  color: #ea580c;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+}
+
+
+/* HÁBITOS */
+
+.habitos {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+
+}
+
+
+.habito {
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+
+.habito-icono {
+
+  font-size: 25px;
+
+}
+
+
+.habito p {
+
+  margin: 4px 0 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+}
+
+
+.habito > strong:last-child {
+
+  margin-left: auto;
+
+  font-size: 18px;
+
+}
+
+
+/* TAREAS */
+
+.tarea {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border-bottom: 1px solid #eee;
+
+}
+
+
+.tarea:last-child {
+
+  border-bottom: none;
+
+}
+
+
+.prioridad {
+
+  width: 11px;
+
+  height: 11px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+
+}
+
+
+.p5 {
+
+  background: #dc2626;
+
+}
+
+
+.p4 {
+
+  background: #f97316;
+
+}
+
+
+.p3 {
+
+  background: #eab308;
+
+}
+
+
+.p2 {
+
+  background: #22c55e;
+
+}
+
+
+.p1 {
+
+  background: #94a3b8;
+
+}
+
+
+.tarea-info {
+
+  flex: 1;
+
+}
+
+
+.tarea-info strong {
+
+  display: block;
+
+}
+
+
+.tarea-info span {
+
+  color: #777;
+
+  font-size: 13px;
+
+}
+
+
+.importancia {
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+}
+
+
+/* PLAN */
+
+.bloque-plan {
+
+  padding: 14px;
+
+  margin-bottom: 8px;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+  border-left: 5px solid #94a3b8;
+
+}
+
+
+.bloque-plan strong {
+
+  display: block;
+
+}
+
+
+.bloque-plan span {
+
+  color: #666;
+
+  font-size: 13px;
+
+}
+
+
+/* MODAL */
+
+.modal {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: rgba(0,0,0,.45);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  z-index: 1000;
+
+  overflow-y: auto;
+
+}
+
+.oculto {
+
+  display: none;
+
+}
+
+
+.formulario {
+
+  background: white;
+
+  width: 100%;
+
+  max-width: 500px;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,.2);
+
+  max-height: calc(100vh - 40px);
+
+  overflow-y: auto;
+
+}
+
+
+
+
+.formulario h2 {
+
+  margin-top: 0;
+
+  margin-bottom: 20px;
+
+}
+
+
+.formulario label {
+
+  display: block;
+
+  margin-top: 15px;
+
+  margin-bottom: 6px;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+}
+
+
+.formulario input,
+.formulario select {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  background: white;
+
+}
+
+
+.botones-formulario {
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 25px;
+
+}
+
+
+.botones-formulario button {
+
+  flex: 1;
+
+}
+
+
+.boton-cancelar {
+
+  background: #e5e7eb;
+
+  color: #222;
+
+}
+
+
+.boton-cancelar:hover {
+
+  background: #d1d5db;
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+  body {
+
+    padding: 12px;
+
+  }
+
+
+  header {
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+  }
+
+
+  h1 {
+
+    font-size: 25px;
+
+  }
+
+
+  .resumen {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .habitos {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .seccion {
+
+    padding: 15px;
+
+  }
+
+}
+
+/* =========================
+   ORGANIZADOR
+========================= */
+
+.boton-organizar {
+
+  width: 100%;
+
+  background: #111827;
+
+  color: white;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+
+.boton-organizar:hover {
+
+  background: #1f2937;
+
+}
+
+
+#resultadoOrganizacion {
+
+  margin-top: 15px;
+
+}
+
+
+.plan-dia {
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  margin-bottom: 12px;
+
+  overflow: hidden;
+
+}
+
+
+.plan-dia-titulo {
+
+  background: #f8fafc;
+
+  padding: 12px 15px;
+
+  font-weight: bold;
+
+}
+
+
+.plan-bloque {
+
+  padding: 12px 15px;
+
+  border-top: 1px solid #eee;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+}
+
+
+.plan-hora {
+
+  font-weight: bold;
+
+  min-width: 110px;
+
+}
+
+
+.plan-tarea {
+
+  flex: 1;
+
+}
+
+
+.plan-prioridad {
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+}
+
+
+.sin-espacio {
+
+  padding: 12px 15px;
+
+  color: #dc2626;
+
+  background: #fff7f7;
+
+}
+
+#configuracionExamen {
+
+  display: none;
+
+}
+
+#configuracionExamen {
+
+  margin-top: 0;
+
+}
+/* =================================
+   CALENDARIO DINÁMICO
+================================= */
+
+.calendario {
+
+  min-width: 1100px;
+
+  display: grid;
+
+  grid-template-columns:
+    75px
+    repeat(7, 1fr);
+
+  grid-auto-rows: 55px;
+
+  border-left: 1px solid #ddd;
+
+  border-top: 1px solid #ddd;
+
+}
+
+
+.celda-calendario {
+
+  border-right: 1px solid #ddd;
+
+  border-bottom: 1px solid #ddd;
+
+  padding: 5px;
+
+  position: relative;
+
+  font-size: 11px;
+
+}
+
+
+.celda-hora {
+
+  background: #f1f5f9;
+
+  color: #777;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-weight: bold;
+
+}
+
+
+.celda-dia {
+
+  background: #f1f5f9;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+.bloque-calendario {
+
+  width: calc(100% - 6px);
+
+  height: calc(100% - 6px);
+
+  margin: 3px;
+
+  border-radius: 7px;
+
+  padding: 5px;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  overflow: hidden;
+
+}
+
+
+.bloque-calendario small {
+
+  display: block;
+
+  margin-top: 3px;
+
+  font-weight: normal;
+
+}
+
+
+.bloque-clase {
+
+  background: #475569;
+
+}
+
+
+.bloque-tarea {
+
+  background: #4f46e5;
+
+}
+
+
+.bloque-examen {
+
+  background: #dc2626;
+
+}
+
+
+.bloque-preparacion {
+
+  background: #f97316;
+
+}
+
+
+.bloque-sagfi {
+
+  background: #7c3aed;
+
+}
+
+
+.bloque-habito {
+
+  background: #16a34a;
+
+}
+
+
+.bloque-ocio {
+
+  background: #94a3b8;
+
+}
+
+
+.domingo-calendario {
+
+  background: #fff7ed;
+
+}
+
+
+.boton-completar {
+
+  margin-top: 3px;
+
+  padding: 3px 6px;
+
+  font-size: 10px;
+
+  background: rgba(255,255,255,.25);
+
+}
+
+
+.boton-completar:hover {
+
+  background: rgba(255,255,255,.4);
+
+}
